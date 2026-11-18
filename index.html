@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Nébula - Artista Digital</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #12131c;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    header {
+      background-color: #1d1f2d;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #5a32a3;
+    }
+    .logo-contenedor {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    nav a {
+      color: #c4b5fd;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      background-color: #1d1f2d;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #a78bfa;
+      margin-top: 0;
+    }
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    figcaption {
+      font-size: 13px;
+      color: #aaaaaa;
+      margin-top: 8px;
+    }
+    figcaption a {
+      color: #a78bfa;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .galeria figure {
+      width: 280px;
+      background-color: #12131c;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .contacto {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0b0c12;
+      color: #888888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo-contenedor">
+      <img src="assets/img/logo.svg" alt="Logo de Nébula, un planeta con un anillo" width="45" height="45" loading="lazy">
+      <span>Nébula</span>
+    </a>
+    <nav>
+      <a href="#obras">Galería</a>
+      <a href="#video">Vídeo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Nébula - Arte Digital Sci-Fi</h1>
+      <p>Bienvenidos a mi página web. Soy una artista digital especializada en crear paisajes espaciales y mundos de ciencia ficción.</p>
+      <figure>
+        <img src="assets/img/hero.webp" alt="Paisaje espacial con un planeta gigante y luces de neón" width="1920" height="1080" loading="lazy">
+        <figcaption>
+          Imagen principal con licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank">Creative Commons CC BY 4.0</a>.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Música Ambiental</h2>
+      <p>Puedes escuchar este sonido espacial de fondo mientras ves mis trabajos:</p>
+      <audio controls>
+        <source src="assets/audio/ambiente.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </section>
+
+    <section id="obras">
+      <h2>Mis Trabajos</h2>
+      <div class="galeria">
+        <figure>
+          <img src="assets/img/thumb1.webp" alt="Ciudad futurista iluminada por la noche" width="400" height="250" loading="lazy">
+          <figcaption>Obra 1 - Licencia CC BY 4.0</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/thumb2.webp" alt="Astronauta caminando en un planeta rojo" width="400" height="250" loading="lazy">
+          <figcaption>Obra 2 - Licencia CC BY 4.0</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/thumb3.webp" alt="Nebulosa brillante de color violeta y azul" width="400" height="250" loading="lazy">
+          <figcaption>Obra 3 - Dominio Público CC0</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Vídeo de Presentación</h2>
+      <figure>
+        <video controls poster="assets/img/poster.webp" width="800" height="450">
+          <source src="assets/video/presentacion.mp4" type="video/mp4">
+          Tu navegador no soporta vídeos en HTML5.
+        </video>
+        <figcaption>
+          Timelapse del espacio bajo licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.es" target="_blank">CC0 / Dominio Público</a>.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Si quieres encargarme una ilustración o preguntar dudas, pulsa en el botón:</p>
+      <a href="mailto:nebula@correo.com">
+        <img src="assets/img/cta.webp" alt="Botón animado que parpadea con el texto Contactar" width="250" height="80" loading="lazy">
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Práctica de Multimedia - Página creada para Nébula (2026)</p>
+  </footer>
+
+</body>
+</html>
